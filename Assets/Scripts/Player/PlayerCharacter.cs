@@ -47,10 +47,15 @@ public class PlayerCharacter : Character
 
     private void FixedUpdate()
     {
-        if(state == PlayerState.Run)
+        switch (state)
         {
-            Vector2 dir = move.normalized;
-            rb.velocity = new Vector2(dir.x*runSpeed,dir.y*runSpeed);
+            case PlayerState.Idle:
+                rb.velocity = Vector2.zero;
+                break;
+            case PlayerState.Run:
+                Vector2 dir = move.normalized;
+                rb.velocity = new Vector2(dir.x * runSpeed, dir.y * runSpeed);
+                break;
         }
     }
 
@@ -181,10 +186,10 @@ public class PlayerCharacter : Character
     {
         Vector3 scaleLeft = new Vector3(-1, 1, 1);
         Vector3 scaleRight = new Vector3(1, 1, 1);
-        if(h > 0.1)
+        if(h > 0)
         {
             transform.localScale = scaleRight;
-        }else if(h < 0.1)
+        }else if(h < 0)
         {
             transform.localScale = scaleLeft;
         }
