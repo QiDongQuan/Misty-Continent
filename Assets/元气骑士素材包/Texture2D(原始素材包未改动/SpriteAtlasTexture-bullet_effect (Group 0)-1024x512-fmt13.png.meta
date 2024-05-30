@@ -125,6 +125,153 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-bullet_effect (Group 0)-1024x512-fmt13_1
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 294
+        width: 40
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aa3ebe92d90e6740aaf0fbaab47837c
+      internalID: -1595597115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-bullet_effect (Group 0)-1024x512-fmt13_2
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 294
+        width: 40
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbc100a9488a86940a33256fdc5a41d3
+      internalID: -779416542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-bullet_effect (Group 0)-1024x512-fmt13_3
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 233
+        width: 40
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 545528fac0832f749adf2bd0215c2d4a
+      internalID: 1876669074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-bullet_effect (Group 0)-1024x512-fmt13_4
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 186
+        width: 40
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d8166a9f233fad4aaa472e4da553a8b
+      internalID: -609740064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-bullet_effect (Group 0)-1024x512-fmt13_5
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 52
+        width: 40
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e617a1c767889e49802e6cafa51493d
+      internalID: -1716658226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-bullet_effect (Group 0)-1024x512-fmt13_6
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 5
+        width: 40
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07a64c10e6d15d445978b37a9cc30442
+      internalID: -481495810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-bullet_effect (Group 0)-1024x512-fmt13_7
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 5
+        width: 40
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc52110c4c9914b439799f9dc7aa5cc1
+      internalID: -168132397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -137,6 +284,13 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       SpriteAtlasTexture-bullet_effect (Group 0)-1024x512-fmt13_0: 2107669566
+      SpriteAtlasTexture-bullet_effect (Group 0)-1024x512-fmt13_1: -1595597115
+      SpriteAtlasTexture-bullet_effect (Group 0)-1024x512-fmt13_2: -779416542
+      SpriteAtlasTexture-bullet_effect (Group 0)-1024x512-fmt13_3: 1876669074
+      SpriteAtlasTexture-bullet_effect (Group 0)-1024x512-fmt13_4: -609740064
+      SpriteAtlasTexture-bullet_effect (Group 0)-1024x512-fmt13_5: -1716658226
+      SpriteAtlasTexture-bullet_effect (Group 0)-1024x512-fmt13_6: -481495810
+      SpriteAtlasTexture-bullet_effect (Group 0)-1024x512-fmt13_7: -168132397
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

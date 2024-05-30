@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -42,12 +42,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 40
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -103,7 +103,301 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-alien (Group 0)-256x512-fmt13_3
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 380
+        width: 15
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98c0ba7c6fbd47d41b6e82d310c946ad
+      internalID: 749455519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-alien (Group 0)-256x512-fmt13_33
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 203
+        width: 43
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11c6d1fa4ba22694eaec0386656f28bf
+      internalID: -1437470103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-alien (Group 0)-256x512-fmt13_34
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 193
+        width: 43
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7438e71e8f52a9e45a93a510e8001426
+      internalID: 348377268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-alien (Group 0)-256x512-fmt13_39
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 159
+        width: 43
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f9fbcd246e3e2748a80302244f1d10e
+      internalID: 999276984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-alien (Group 0)-256x512-fmt13_40
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 150
+        width: 43
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03a0617071e78514e88c7ec6b360d0c0
+      internalID: -492979958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-alien (Group 0)-256x512-fmt13_45
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 109
+        width: 38
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acb7891736270f04896415d3af3cadb3
+      internalID: 1548332107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-alien (Group 0)-256x512-fmt13_46
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 128
+        width: 35
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f3da8e760318914fa2a6313ca1f2481
+      internalID: 613023473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-alien (Group 0)-256x512-fmt13_49
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 108
+        width: 43
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78713a832c1d73c4db56867c6ef5e80a
+      internalID: -1819187074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-alien (Group 0)-256x512-fmt13_53
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 65
+        width: 45
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c1a1811bdc561446a9f8cf6df754e9b
+      internalID: 446379510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-alien (Group 0)-256x512-fmt13_54
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 64
+        width: 43
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 562f1ca8ed3ffcf40bbbf3236e001a31
+      internalID: -418022143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-alien (Group 0)-256x512-fmt13_55
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 87
+        width: 46
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5917e9108362e34ba0a730723627ec2
+      internalID: -953734166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-alien (Group 0)-256x512-fmt13_56
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 88
+        width: 45
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d27005124282eaa4cb1ae89e3a90a202
+      internalID: -385001070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-alien (Group 0)-256x512-fmt13_59
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 43
+        width: 43
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca473388391ff7a4395dd5f1a96cbc8e
+      internalID: 1494885674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-alien (Group 0)-256x512-fmt13_61
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 1
+        width: 43
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fbaa556c6abeea4e9301a98ee60ace6
+      internalID: -1626758390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -114,7 +408,72 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SpriteAtlasTexture-alien (Group 0)-256x512-fmt13_0: -822318153
+      SpriteAtlasTexture-alien (Group 0)-256x512-fmt13_1: 569114748
+      SpriteAtlasTexture-alien (Group 0)-256x512-fmt13_10: -1583814743
+      SpriteAtlasTexture-alien (Group 0)-256x512-fmt13_11: 970215093
+      SpriteAtlasTexture-alien (Group 0)-256x512-fmt13_12: -711245390
+      SpriteAtlasTexture-alien (Group 0)-256x512-fmt13_13: -1404498258
+      SpriteAtlasTexture-alien (Group 0)-256x512-fmt13_14: -1924451301
+      SpriteAtlasTexture-alien (Group 0)-256x512-fmt13_15: -1227490437
+      SpriteAtlasTexture-alien (Group 0)-256x512-fmt13_16: 504488114
+      SpriteAtlasTexture-alien (Group 0)-256x512-fmt13_17: 1589292552
+      SpriteAtlasTexture-alien (Group 0)-256x512-fmt13_18: 1140618093
+      SpriteAtlasTexture-alien (Group 0)-256x512-fmt13_19: 2009540614
+      SpriteAtlasTexture-alien (Group 0)-256x512-fmt13_2: 1099214302
+      SpriteAtlasTexture-alien (Group 0)-256x512-fmt13_20: 526661896
+      SpriteAtlasTexture-alien (Group 0)-256x512-fmt13_21: 546621607
+      SpriteAtlasTexture-alien (Group 0)-256x512-fmt13_22: 1916357267
+      SpriteAtlasTexture-alien (Group 0)-256x512-fmt13_23: 690561764
+      SpriteAtlasTexture-alien (Group 0)-256x512-fmt13_24: -1969814736
+      SpriteAtlasTexture-alien (Group 0)-256x512-fmt13_25: -1318388230
+      SpriteAtlasTexture-alien (Group 0)-256x512-fmt13_26: -1888592628
+      SpriteAtlasTexture-alien (Group 0)-256x512-fmt13_27: -1775551480
+      SpriteAtlasTexture-alien (Group 0)-256x512-fmt13_28: 371743566
+      SpriteAtlasTexture-alien (Group 0)-256x512-fmt13_29: -1166179221
+      SpriteAtlasTexture-alien (Group 0)-256x512-fmt13_3: 749455519
+      SpriteAtlasTexture-alien (Group 0)-256x512-fmt13_30: -1549561824
+      SpriteAtlasTexture-alien (Group 0)-256x512-fmt13_31: -563034475
+      SpriteAtlasTexture-alien (Group 0)-256x512-fmt13_32: -193640287
+      SpriteAtlasTexture-alien (Group 0)-256x512-fmt13_33: -1437470103
+      SpriteAtlasTexture-alien (Group 0)-256x512-fmt13_34: 348377268
+      SpriteAtlasTexture-alien (Group 0)-256x512-fmt13_35: -612356621
+      SpriteAtlasTexture-alien (Group 0)-256x512-fmt13_36: 373209706
+      SpriteAtlasTexture-alien (Group 0)-256x512-fmt13_37: 1083026983
+      SpriteAtlasTexture-alien (Group 0)-256x512-fmt13_38: 1356762689
+      SpriteAtlasTexture-alien (Group 0)-256x512-fmt13_39: 999276984
+      SpriteAtlasTexture-alien (Group 0)-256x512-fmt13_4: 1579434780
+      SpriteAtlasTexture-alien (Group 0)-256x512-fmt13_40: -492979958
+      SpriteAtlasTexture-alien (Group 0)-256x512-fmt13_41: -450169732
+      SpriteAtlasTexture-alien (Group 0)-256x512-fmt13_42: 1378409764
+      SpriteAtlasTexture-alien (Group 0)-256x512-fmt13_43: -429484447
+      SpriteAtlasTexture-alien (Group 0)-256x512-fmt13_44: -635729227
+      SpriteAtlasTexture-alien (Group 0)-256x512-fmt13_45: 1548332107
+      SpriteAtlasTexture-alien (Group 0)-256x512-fmt13_46: 613023473
+      SpriteAtlasTexture-alien (Group 0)-256x512-fmt13_47: -1422289542
+      SpriteAtlasTexture-alien (Group 0)-256x512-fmt13_48: -300627665
+      SpriteAtlasTexture-alien (Group 0)-256x512-fmt13_49: -1819187074
+      SpriteAtlasTexture-alien (Group 0)-256x512-fmt13_5: 1806773057
+      SpriteAtlasTexture-alien (Group 0)-256x512-fmt13_50: 194660616
+      SpriteAtlasTexture-alien (Group 0)-256x512-fmt13_51: 1715307292
+      SpriteAtlasTexture-alien (Group 0)-256x512-fmt13_52: -687210366
+      SpriteAtlasTexture-alien (Group 0)-256x512-fmt13_53: 446379510
+      SpriteAtlasTexture-alien (Group 0)-256x512-fmt13_54: -418022143
+      SpriteAtlasTexture-alien (Group 0)-256x512-fmt13_55: -953734166
+      SpriteAtlasTexture-alien (Group 0)-256x512-fmt13_56: -385001070
+      SpriteAtlasTexture-alien (Group 0)-256x512-fmt13_57: 1796035572
+      SpriteAtlasTexture-alien (Group 0)-256x512-fmt13_58: 1931953456
+      SpriteAtlasTexture-alien (Group 0)-256x512-fmt13_59: 1494885674
+      SpriteAtlasTexture-alien (Group 0)-256x512-fmt13_6: 1452396534
+      SpriteAtlasTexture-alien (Group 0)-256x512-fmt13_60: 1341563819
+      SpriteAtlasTexture-alien (Group 0)-256x512-fmt13_61: -1626758390
+      SpriteAtlasTexture-alien (Group 0)-256x512-fmt13_62: -771886343
+      SpriteAtlasTexture-alien (Group 0)-256x512-fmt13_63: 1721215778
+      SpriteAtlasTexture-alien (Group 0)-256x512-fmt13_64: -491340776
+      SpriteAtlasTexture-alien (Group 0)-256x512-fmt13_7: -1255274833
+      SpriteAtlasTexture-alien (Group 0)-256x512-fmt13_8: 521366757
+      SpriteAtlasTexture-alien (Group 0)-256x512-fmt13_9: 1799256473
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

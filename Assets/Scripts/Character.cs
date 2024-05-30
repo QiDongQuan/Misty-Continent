@@ -11,6 +11,9 @@ public class Character : MonoBehaviour
     public int Attack;//¹¥»÷
     public int Armor;//»¤¼×
 
+    public int MaxHp;
+    public int MaxEnenrgy;
+
     public bool IsCanBeKill(DamageInfo damageInfo)
     {
         if(Hp <= damageInfo.damage)
