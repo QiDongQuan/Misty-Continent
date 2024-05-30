@@ -50,10 +50,11 @@ public class PlayerCharacter : Character
 
     private void FixedUpdate()
     {
+        rb.velocity = Vector2.zero;
         switch (state)
         {
             case PlayerState.Idle:
-                rb.velocity = Vector2.zero;
+
                 break;
             case PlayerState.Run:
                 Vector2 dir = move.normalized;
@@ -184,6 +185,27 @@ public class PlayerCharacter : Character
 
     }
     #endregion
+
+    public void GetHit(int damage)
+    {
+        if(state == PlayerState.Die)
+        {
+            return;
+        }
+
+        Hp-=damage;
+
+        if(Hp <= 0)
+        {
+            Hp = 0;
+            Die();
+        }
+    }
+
+    public void Die()
+    {
+        animator.SetTrigger("Die");
+    }
 
     void Fild(float h)
     {
