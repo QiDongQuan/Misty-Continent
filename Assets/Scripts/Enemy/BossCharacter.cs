@@ -18,6 +18,11 @@ public class BossCharacter : Character
     Rigidbody2D rb;
     Transform player;
 
+    public Transform skillTip;
+    public Transform skillBullet;
+    public Transform fireball;
+    Transform firePoint;
+
     public BossState _state;
     public BossState state
     {
@@ -31,6 +36,7 @@ public class BossCharacter : Character
         rb = GetComponent<Rigidbody2D>();
         player = GameObject.FindGameObjectWithTag("Player").transform;
         state = BossState.Move;
+        firePoint = transform.Find("FirePoint");
     }
 
     private void FixedUpdate()
@@ -92,6 +98,28 @@ public class BossCharacter : Character
         {
             animator.SetTrigger("Skill");
         }
+    }
+
+    public void NormalAttack()
+    {
+        Transform tmp = Instantiate(fireball);
+        tmp.position = firePoint.position;
+        tmp.up = transform.position - player.position;
+    }
+
+    public void Skill()
+    {
+        StartCoroutine(UseSkill());
+    }
+
+    IEnumerator UseSkill()
+    {
+        Transform tmp = Instantiate(skillTip);
+        tmp.position = player.position;
+        yield return new WaitForSeconds(1);
+        Transform bullet = Instantiate(skillBullet);
+        bullet.position = tmp.position;
+        Destroy(tmp.gameObject);
     }
 
     public void FinishAttack()
