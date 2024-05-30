@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public enum PlayerState
@@ -17,6 +18,7 @@ public class PlayerCharacter : Character
     Vector2 move;
     Rigidbody2D rb;
     public Transform target;
+    Transform firePoint;
     Transform weaponSlot;
     PlayerState _state;
     public PlayerState state
@@ -32,19 +34,11 @@ public class PlayerCharacter : Character
         controller = GetComponent<PlayerController>();
         animator = GetComponent<Animator>();
         weaponSlot = transform.Find("WeaponSlot");
+        firePoint = weaponSlot.GetChild(0);
     }
 
     private void Update()
     {
-        if (target)
-        {
-            Fild(target);
-            weaponSlot.LookAt(target);
-        }
-        else
-        {
-            Fild(controller.h);
-        }
         move = new Vector2 (controller.h, controller.v);
     }
 
@@ -185,6 +179,55 @@ public class PlayerCharacter : Character
 
     }
     #endregion
+
+    void PlayerAttack()
+    {
+
+    }
+
+    void AttackAndFildUpdate()
+    {
+        target = TargetScan();
+        if (target)
+        {
+            Fild(target);
+            weaponSlot.LookAt(target);
+            PlayerAttack();
+        }
+        else
+        {
+            Fild(controller.h);
+        }
+    }
+
+    public Transform TargetScan()
+    {
+        List<Transform> targetList = new List<Transform>();
+        Collider[] collides = Physics.OverlapSphere(transform.position, 10.0f, LayerMask.GetMask("CanHit"));
+        foreach(Collider col in collides)
+        {
+            if (col.CompareTag("Enemy"))
+            {
+                //如果敌人死亡，跳过
+            }
+            if (col.CompareTag("Boss"))
+            {
+                //如果Boss死亡，跳过
+            }
+            targetList.Add(col.transform);
+        }
+        targetList.Sort((a,b) =>
+        {
+            float distanceA = Vector3.Distance(transform.position, a.position);
+            float dictanceB = Vector3.Distance(transform.position,b.position);
+            return distanceA.CompareTo(dictanceB);
+        });
+        if(targetList.Count == 0)
+        {
+            return null;
+        }
+        return targetList[0];
+    }
 
     public void GetHit(int damage)
     {
