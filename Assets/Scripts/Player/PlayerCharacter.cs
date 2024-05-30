@@ -231,7 +231,7 @@ public class PlayerCharacter : Character
         return targetList[0];
     }
 
-    public void GetHit(int damage)
+    public override void GetHit(int damage)
     {
         if(state == PlayerState.Die)
         {

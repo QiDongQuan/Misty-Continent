@@ -10,4 +10,18 @@ public class Character : MonoBehaviour
     public int Enenrgy;//ÄÜÁ¿
     public int Attack;//¹¥»÷
     public int Armor;//»¤¼×
+
+    public bool IsCanBeKill(DamageInfo damageInfo)
+    {
+        if(Hp <= damageInfo.damage)
+        {
+            return true;
+        }
+        return false;
+    }
+
+    public virtual void GetHit(int damage)
+    {
+
+    }
 }
