@@ -205,8 +205,8 @@ public class PlayerCharacter : Character
     public Transform TargetScan()
     {
         List<Transform> targetList = new List<Transform>();
-        Collider[] collides = Physics.OverlapSphere(transform.position, 10.0f, LayerMask.GetMask("CanHit"));
-        foreach(Collider col in collides)
+        Collider2D[] collides = Physics2D.OverlapCircleAll(transform.position, 4.0f, LayerMask.GetMask("CanHit"));
+        foreach(Collider2D col in collides)
         {
             if (col.CompareTag("Enemy"))
             {
@@ -279,5 +279,11 @@ public class PlayerCharacter : Character
         {
             transform.localScale = scaleLeft;
         }
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position,4.0f);
     }
 }
