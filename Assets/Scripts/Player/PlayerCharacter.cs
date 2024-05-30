@@ -145,6 +145,7 @@ public class PlayerCharacter : Character
         {
             animator.SetBool("Run",true);
         }
+        AttackAndFildUpdate();
     }
     public void RunUpdate()
     {
@@ -152,6 +153,7 @@ public class PlayerCharacter : Character
         {
             animator.SetBool("Run",false);
         }
+        AttackAndFildUpdate();
     }
     public void AttackUpdate()
     {
