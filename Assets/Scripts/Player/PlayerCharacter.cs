@@ -16,7 +16,8 @@ public class PlayerCharacter : Character
     PlayerController controller;
     Vector2 move;
     Rigidbody2D rb;
-    Transform target;
+    public Transform target;
+    Transform weaponSlot;
     PlayerState _state;
     public PlayerState state
     {
@@ -30,6 +31,7 @@ public class PlayerCharacter : Character
         rb = GetComponent<Rigidbody2D>();
         controller = GetComponent<PlayerController>();
         animator = GetComponent<Animator>();
+        weaponSlot = transform.Find("WeaponSlot");
     }
 
     private void Update()
@@ -37,6 +39,7 @@ public class PlayerCharacter : Character
         if (target)
         {
             Fild(target);
+            weaponSlot.LookAt(target);
         }
         else
         {
