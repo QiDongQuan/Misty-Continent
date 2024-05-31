@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public enum PlayerState
 {
@@ -28,8 +29,15 @@ public class PlayerCharacter : Character
         set { _state = value; }
     }
 
+    public Slider HpUI;
+    public Slider EnenrgyUI;
+    public Canvas Canvas;
+
+
     private void Start()
     {
+        Hp = MaxHp;
+        Enenrgy = MaxEnenrgy;
         state = PlayerState.Idle;
         rb = GetComponent<Rigidbody2D>();
         controller = GetComponent<PlayerController>();
@@ -45,6 +53,7 @@ public class PlayerCharacter : Character
     private void Update()
     {
         move = new Vector2 (controller.h, controller.v);
+        RefreshUI();
     }
 
     private void FixedUpdate()
@@ -265,6 +274,15 @@ public class PlayerCharacter : Character
     {
         animator.SetTrigger("Die");
         transform.GetComponent<Collider2D>().enabled = false;
+        Canvas.enabled = false;
+    }
+
+    public void RefreshUI()
+    {
+        HpUI.maxValue = MaxHp;
+        HpUI.value = Hp;
+        EnenrgyUI.maxValue = MaxEnenrgy;
+        EnenrgyUI.value = Enenrgy;
     }
 
     void Fild(float h)
@@ -274,9 +292,12 @@ public class PlayerCharacter : Character
         if(h > 0)
         {
             transform.localScale = scaleRight;
-        }else if(h < 0)
+            Canvas.transform.localScale = scaleRight;
+        }
+        else if(h < 0)
         {
             transform.localScale = scaleLeft;
+            Canvas.transform.localScale = scaleLeft;
         }
     }
 
@@ -290,9 +311,12 @@ public class PlayerCharacter : Character
         if (d > 0)
         {
             transform.localScale = scaleRight;
-        }else if(d < 0)
+            Canvas.transform.localScale = scaleRight;
+        }
+        else if(d < 0)
         {
             transform.localScale = scaleLeft;
+            Canvas.transform.localScale = scaleLeft;
         }
     }
 

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e2d8a856c0fe5034a9928b011c367ab7
+guid: 6a932663923c6c347a69ca8c89426f94
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -42,13 +42,13 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 40
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 200
+  spriteBorder: {x: 111, y: 12, z: 111, w: 12}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -103,62 +103,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: SpriteAtlasTexture-object_common (Group 0)-256x256-fmt13_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 28
-        width: 46
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c2495b052231fc44386c8fc26140e975
-      internalID: 128914135
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteAtlasTexture-object_common (Group 0)-256x256-fmt13_1
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 45
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a02e0027eaaa32e46ac90abb99e654e4
-      internalID: 700643147
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 0
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      SpriteAtlasTexture-object_common (Group 0)-256x256-fmt13_0: 128914135
-      SpriteAtlasTexture-object_common (Group 0)-256x256-fmt13_1: 700643147
+    nameFileIdTable: {}
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

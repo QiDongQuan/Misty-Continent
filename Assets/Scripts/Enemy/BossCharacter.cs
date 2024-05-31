@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public enum BossState
 {
@@ -23,6 +24,9 @@ public class BossCharacter : Character
     public Transform fireball;
     Transform firePoint;
 
+    public Slider HpUI;
+    public Canvas Canvas;
+
     public BossState _state;
     public BossState state
     {
@@ -32,6 +36,7 @@ public class BossCharacter : Character
 
     private void Start()
     {
+        Hp = MaxHp;
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         player = GameObject.FindGameObjectWithTag("Player").transform;
@@ -63,7 +68,8 @@ public class BossCharacter : Character
 
     private void Update()
     {
-        if(state != BossState.Die)
+        RefreshUI();
+        if (state != BossState.Die)
         {
             Fild(player);
         }
@@ -82,12 +88,23 @@ public class BossCharacter : Character
                 }
                 break;
             case BossState.Attack:
-
+                if (Vector3.Distance(transform.position, player.position) < attackDist && attackCD <= 0)
+                {
+                    state = BossState.Attack;
+                    Attack();
+                    attackCD = 2.0f;
+                }
                 break;
             case BossState.Die:
 
                 break;
         }
+    }
+
+    public void RefreshUI()
+    {
+        HpUI.maxValue = MaxHp;
+        HpUI.value = Hp;
     }
 
     void Attack()
@@ -154,6 +171,7 @@ public class BossCharacter : Character
         animator.ResetTrigger("GetHit");
         state = BossState.Die;
         transform.GetComponent<Collider2D>().enabled = false;
+        Canvas.enabled = false;
     }
 
     void Fild(Transform target)
@@ -166,10 +184,12 @@ public class BossCharacter : Character
         if (d > 0)
         {
             transform.localScale = scaleRight;
+            Canvas.transform.localScale = scaleRight;
         }
         else if (d < 0)
         {
             transform.localScale = scaleLeft;
+            Canvas.transform.localScale = scaleLeft;
         }
     }
 

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public enum EnemyState
 {
@@ -25,8 +26,12 @@ public class EnemyCharacter : Character
         set { _state = value; }
     }
 
+    public Slider HpUI;
+    public Canvas Canvas;
+
     private void Start()
     {
+        Hp = MaxHp;
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         player = GameObject.FindGameObjectWithTag("Player").transform;
@@ -57,7 +62,8 @@ public class EnemyCharacter : Character
 
     private void Update()
     {
-        if(state != EnemyState.Die)
+        RefreshUI();
+        if (state != EnemyState.Die)
         {
             Fild(player);
         }
@@ -98,6 +104,12 @@ public class EnemyCharacter : Character
         }
     }
 
+    public void RefreshUI()
+    {
+        HpUI.maxValue = MaxHp;
+        HpUI.value = Hp;
+    }
+
     public void FinishAttack()
     {
         state = EnemyState.Move;
@@ -113,10 +125,12 @@ public class EnemyCharacter : Character
         if (d > 0)
         {
             transform.localScale = scaleRight;
+            Canvas.transform.localScale = scaleRight;
         }
         else if (d < 0)
         {
             transform.localScale = scaleLeft;
+            Canvas.transform.localScale = scaleLeft;
         }
     }
 
@@ -140,5 +154,6 @@ public class EnemyCharacter : Character
         animator.SetTrigger("Die");
         state = EnemyState.Die;
         transform.GetComponent<Collider2D>().enabled = false;
+        Canvas.enabled = false;
     }
 }

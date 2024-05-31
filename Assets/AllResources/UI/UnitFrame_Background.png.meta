@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e2d8a856c0fe5034a9928b011c367ab7
+guid: 08e2b6c1a6734db469285df8f3cb8f3a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 40
+  spritePixelsToUnits: 200
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -105,43 +105,43 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SpriteAtlasTexture-object_common (Group 0)-256x256-fmt13_0
+      name: UnitFrame_Background_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 28
-        width: 46
-        height: 29
+        x: 6
+        y: 17
+        width: 231
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 113, y: 11, z: 113, w: 11}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c2495b052231fc44386c8fc26140e975
-      internalID: 128914135
+      spriteID: d84fc80cfa058b2489a77f1f7c492153
+      internalID: -1685784551
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteAtlasTexture-object_common (Group 0)-256x256-fmt13_1
+      name: UnitFrame_Background_1
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 45
-        height: 28
+        width: 250
+        height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 25, y: 22, z: 24, w: 30}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a02e0027eaaa32e46ac90abb99e654e4
-      internalID: 700643147
+      spriteID: 84d4d1d50c99dd44582196c321ffa76c
+      internalID: 556168955
       vertices: []
       indices: 
       edges: []
@@ -157,8 +157,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      SpriteAtlasTexture-object_common (Group 0)-256x256-fmt13_0: 128914135
-      SpriteAtlasTexture-object_common (Group 0)-256x256-fmt13_1: 700643147
+      UnitFrame_Background_0: -1685784551
+      UnitFrame_Background_1: 556168955
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
