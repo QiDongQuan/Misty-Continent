@@ -281,7 +281,7 @@ TextureImporter:
         width: 20
         height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -302,7 +302,7 @@ TextureImporter:
         width: 25
         height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -323,7 +323,7 @@ TextureImporter:
         width: 21
         height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -344,7 +344,7 @@ TextureImporter:
         width: 22
         height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -352,6 +352,90 @@ TextureImporter:
       bones: []
       spriteID: 73a4fd84f7496734aa9b0e222d97fe81
       internalID: 1580331620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-bullet_effect (Group 0)-1024x512-fmt13_12
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 91
+        width: 31
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14ed8dfa08084c548b1f94b76b3f7471
+      internalID: 117014443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-bullet_effect (Group 0)-1024x512-fmt13_13
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 428
+        width: 59
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 846785aef06ce0a4382a037fe6f416fd
+      internalID: 1994325622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-bullet_effect (Group 0)-1024x512-fmt13_14
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 55
+        width: 31
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d86ffe101cf6b241bcefacce3f2ef87
+      internalID: -202142690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-bullet_effect (Group 0)-1024x512-fmt13_15
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 233
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8275a0f7ec94c7e42ac7cab59fbec0c6
+      internalID: 298894917
       vertices: []
       indices: 
       edges: []
@@ -371,6 +455,10 @@ TextureImporter:
       SpriteAtlasTexture-bullet_effect (Group 0)-1024x512-fmt13_1: -1595597115
       SpriteAtlasTexture-bullet_effect (Group 0)-1024x512-fmt13_10: -1081898271
       SpriteAtlasTexture-bullet_effect (Group 0)-1024x512-fmt13_11: 1580331620
+      SpriteAtlasTexture-bullet_effect (Group 0)-1024x512-fmt13_12: 117014443
+      SpriteAtlasTexture-bullet_effect (Group 0)-1024x512-fmt13_13: 1994325622
+      SpriteAtlasTexture-bullet_effect (Group 0)-1024x512-fmt13_14: -202142690
+      SpriteAtlasTexture-bullet_effect (Group 0)-1024x512-fmt13_15: 298894917
       SpriteAtlasTexture-bullet_effect (Group 0)-1024x512-fmt13_2: -779416542
       SpriteAtlasTexture-bullet_effect (Group 0)-1024x512-fmt13_3: 1876669074
       SpriteAtlasTexture-bullet_effect (Group 0)-1024x512-fmt13_4: -609740064

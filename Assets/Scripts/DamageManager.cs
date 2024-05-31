@@ -68,6 +68,7 @@ public class DamageManager : MonoBehaviour
                 if (damageInfo.damage > 0)
                 {
                     component.GetHit(damageInfo.damage);
+                    Debug.Log($"{damageInfo.creator.name}对{damageInfo.target.name}造成了{damageInfo.damage}点伤害");
                 }
             }
         }

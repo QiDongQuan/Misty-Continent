@@ -6,6 +6,8 @@ public class FireBall : MonoBehaviour
 {
     public float speed = 5;
     public float aliveTime = 5;
+    [HideInInspector]
+    public GameObject creator;
 
     private void Update()
     {
@@ -21,7 +23,8 @@ public class FireBall : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            Debug.Log("ÕÊº“ ‹µΩª«Ú…À∫¶");
+            DamageInfo info = new DamageInfo(creator, collision.gameObject, creator.GetComponent<Character>().Attack);
+            DamageManager.Instance.SubmitDamage(info);
             Destroy(gameObject);
         }
     }

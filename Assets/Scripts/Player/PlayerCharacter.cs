@@ -250,6 +250,7 @@ public class PlayerCharacter : Character
     public void Die()
     {
         animator.SetTrigger("Die");
+        transform.GetComponent<Collider2D>().enabled = false;
     }
 
     void Fild(float h)

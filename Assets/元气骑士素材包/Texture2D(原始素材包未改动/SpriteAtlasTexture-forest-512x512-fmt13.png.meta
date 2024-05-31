@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -42,12 +42,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 40
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -103,7 +103,385 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-forest-512x512-fmt13_1
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 150
+        width: 34
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd21a82210239724ba89e3827c0bac2f
+      internalID: 1392551229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-forest-512x512-fmt13_2
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 150
+        width: 34
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05cff783941b1a0449fd8fc008fbe52d
+      internalID: -1368576163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-forest-512x512-fmt13_3
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 143
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 498df007ad499c544a954c1964c1aa07
+      internalID: 244397756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-forest-512x512-fmt13_4
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 108
+        width: 34
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74cbffcb4d26533469198b7ce3133394
+      internalID: -108913105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-forest-512x512-fmt13_5
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 102
+        width: 34
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f271ea5ad23cec4c90a56a721add802
+      internalID: -2054782459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-forest-512x512-fmt13_6
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 129
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8bcc5a31fa1c9d4695243e970beaa68
+      internalID: 926804587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-forest-512x512-fmt13_7
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 87
+        width: 34
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ef596a70ec91b840838d4ab62ebbc81
+      internalID: 1684249868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-forest-512x512-fmt13_8
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 50
+        width: 34
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faa3f8fce5c54a1419a5e5bb59e8fad2
+      internalID: 1816558589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-forest-512x512-fmt13_9
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 216
+        width: 39
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c74ecba4e6d9ab4488f4be607523fc1
+      internalID: -388736694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-forest-512x512-fmt13_0
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 133
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60cb0fb989b5d40408be7ee5736d434a
+      internalID: -1723938189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-forest-512x512-fmt13_10
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 123
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 837c881262c41114b90fe5df12bd13e8
+      internalID: 753742072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-forest-512x512-fmt13_11
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 101
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23fdf83b78ccb2f4d999923fbf4ee1b2
+      internalID: 378038495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-forest-512x512-fmt13_12
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 92
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cc21040a4c74024c89a5bb66426c6c9
+      internalID: -482137928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-forest-512x512-fmt13_13
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 34
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9892c67d681e8d24ab9946dbcf5cbc70
+      internalID: -11203595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-forest-512x512-fmt13_14
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 2
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26496e9c5238669478d2676677888f08
+      internalID: 449971763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-forest-512x512-fmt13_15
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 2
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef5025be4d1f2e94fa398e9269145442
+      internalID: 125849079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-forest-512x512-fmt13_16
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 2
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d56837e1de76d5b449313deb359bd743
+      internalID: -622683325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-forest-512x512-fmt13_17
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 65
+        width: 27
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bd712de5c3f5e8488e0d0026d749615
+      internalID: -669671317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -114,7 +492,25 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SpriteAtlasTexture-forest-512x512-fmt13_0: -1723938189
+      SpriteAtlasTexture-forest-512x512-fmt13_1: 1392551229
+      SpriteAtlasTexture-forest-512x512-fmt13_10: 753742072
+      SpriteAtlasTexture-forest-512x512-fmt13_11: 378038495
+      SpriteAtlasTexture-forest-512x512-fmt13_12: -482137928
+      SpriteAtlasTexture-forest-512x512-fmt13_13: -11203595
+      SpriteAtlasTexture-forest-512x512-fmt13_14: 449971763
+      SpriteAtlasTexture-forest-512x512-fmt13_15: 125849079
+      SpriteAtlasTexture-forest-512x512-fmt13_16: -622683325
+      SpriteAtlasTexture-forest-512x512-fmt13_17: -669671317
+      SpriteAtlasTexture-forest-512x512-fmt13_2: -1368576163
+      SpriteAtlasTexture-forest-512x512-fmt13_3: 244397756
+      SpriteAtlasTexture-forest-512x512-fmt13_4: -108913105
+      SpriteAtlasTexture-forest-512x512-fmt13_5: -2054782459
+      SpriteAtlasTexture-forest-512x512-fmt13_6: 926804587
+      SpriteAtlasTexture-forest-512x512-fmt13_7: 1684249868
+      SpriteAtlasTexture-forest-512x512-fmt13_8: 1816558589
+      SpriteAtlasTexture-forest-512x512-fmt13_9: -388736694
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

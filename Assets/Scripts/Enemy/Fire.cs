@@ -5,6 +5,8 @@ using UnityEngine;
 public class Fire : MonoBehaviour
 {
     public float aliveTime = 5f;
+    [HideInInspector]
+    public GameObject creator;
 
     private void Update()
     {
@@ -19,7 +21,8 @@ public class Fire : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            Debug.Log("ÕÊº“ ‹µΩ…À∫¶");
+            DamageInfo info = new DamageInfo(creator,collision.gameObject,creator.GetComponent<Character>().Attack);
+            DamageManager.Instance.SubmitDamage(info);
         }
     }
 }

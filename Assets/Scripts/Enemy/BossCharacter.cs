@@ -104,6 +104,7 @@ public class BossCharacter : Character
     {
         Transform tmp = Instantiate(fireball);
         tmp.position = firePoint.position;
+        tmp.GetComponent<FireBall>().creator = gameObject;
         tmp.up = transform.position - player.position;
     }
 
@@ -119,6 +120,7 @@ public class BossCharacter : Character
         yield return new WaitForSeconds(1);
         Transform bullet = Instantiate(skillBullet);
         bullet.position = tmp.position;
+        bullet.GetComponent<Fire>().creator = gameObject;
         Destroy(tmp.gameObject);
     }
 
