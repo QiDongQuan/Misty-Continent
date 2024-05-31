@@ -14,6 +14,10 @@ public enum PlayerState
 
 public class PlayerCharacter : Character
 {
+    [HideInInspector]
+    public int lv = 1;
+    //[HideInInspector]
+    public int experience;
     Animator animator;
     PlayerController controller;
     Vector2 move;
@@ -22,6 +26,7 @@ public class PlayerCharacter : Character
     public Transform target;
     public Transform firePoint;
     Transform weaponSlot;
+    SkillBuff skillBuff;
     PlayerState _state;
     public PlayerState state
     {
@@ -44,10 +49,21 @@ public class PlayerCharacter : Character
         animator = GetComponent<Animator>();
         weaponSlot = transform.Find("WeaponSlot");
         buffHandler = GetComponent<BuffHandler>();
-        BuffInfo buffInfo = new BuffInfo(Resources.Load<BuffData>("BuffData/Normal_Damage"),gameObject,gameObject);
+        skillBuff = GetComponent<SkillBuff>();
+        AddBuff("BuffData/Normal_Damage", gameObject, gameObject);
+        AddBuff("BuffData/Skill01_BuffData", gameObject, gameObject);
+        AddBuff("BuffData/PlayerLevelUp_BuffData", gameObject, gameObject);
+    }
+
+    public void AddBuff(string buffData,GameObject craetor,GameObject target)
+    {
+        BuffInfo buffInfo = new BuffInfo(Resources.Load<BuffData>(buffData), gameObject, gameObject);
         buffHandler.AddBuff(buffInfo);
-        BuffInfo buffInfo1 = new BuffInfo(Resources.Load<BuffData>("BuffData/Skill01_BuffData"),gameObject,gameObject);
-        buffHandler.AddBuff(buffInfo1);
+        if (buffInfo.buffData.isSkill)
+        {
+            skillBuff.buffDatas.Add(buffInfo);
+            skillBuff.Refresh();
+        }
     }
 
     private void Update()

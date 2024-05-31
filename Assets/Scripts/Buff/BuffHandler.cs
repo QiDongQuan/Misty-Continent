@@ -18,14 +18,32 @@ public class BuffHandler : MonoBehaviour
         {
             if (buffInfo.buffData.OnTick != null)
             {
-                if (buffInfo.tickTimer < 0)
+                if (buffInfo.buffData.isSkill && buffInfo.target.CompareTag("Player"))
                 {
-                    buffInfo.buffData.OnTick?.Applay(buffInfo);
-                    buffInfo.tickTimer = buffInfo.buffData.tickTime;
+                    if (buffInfo.tickTimer < 0)
+                    {
+                        if (buffInfo.target.GetComponent<PlayerCharacter>().target)
+                        {
+                            buffInfo.buffData.OnTick?.Applay(buffInfo);
+                            buffInfo.tickTimer = buffInfo.buffData.tickTime;
+                        }
+                    }
+                    else
+                    {
+                        buffInfo.tickTimer -= Time.deltaTime;
+                    }
                 }
                 else
                 {
-                    buffInfo.tickTimer -= Time.deltaTime;
+                    if (buffInfo.tickTimer < 0)
+                    {
+                        buffInfo.buffData.OnTick?.Applay(buffInfo);
+                        buffInfo.tickTimer = buffInfo.buffData.tickTime;
+                    }
+                    else
+                    {
+                        buffInfo.tickTimer -= Time.deltaTime;
+                    }
                 }
             }
 

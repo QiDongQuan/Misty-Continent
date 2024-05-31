@@ -26,10 +26,27 @@ public class UIManager : MonoBehaviour
     public Camera UICamera;
 
     public Text Tips;
+    public Image ExperienceBar;
+    public Text Lv;
 
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerCharacter>();
+    }
+    private void Update()
+    {
+        LvRefresh();
+    }
+
+    public void LvRefresh()
+    {
+        ExperienceBar.fillAmount = player.experience / (100.0f + (player.lv - 1) * 25.0f);
+        if (player.experience >= (100 + (player.lv - 1) * 25))
+        {
+            player.experience -= (100 + (player.lv - 1) * 25);
+            player.lv += 1;
+            Lv.text = player.lv.ToString();
+        }
     }
 
     public void SetTips(string text)
