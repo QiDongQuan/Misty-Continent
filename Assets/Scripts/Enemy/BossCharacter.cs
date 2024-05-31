@@ -63,7 +63,10 @@ public class BossCharacter : Character
 
     private void Update()
     {
-        Fild(player);
+        if(state != BossState.Die)
+        {
+            Fild(player);
+        }
         if(attackCD > 0)
         {
             attackCD -= Time.deltaTime;
@@ -148,7 +151,9 @@ public class BossCharacter : Character
     void Die()
     {
         animator.SetTrigger("Die");
+        animator.ResetTrigger("GetHit");
         state = BossState.Die;
+        transform.GetComponent<Collider2D>().enabled = false;
     }
 
     void Fild(Transform target)

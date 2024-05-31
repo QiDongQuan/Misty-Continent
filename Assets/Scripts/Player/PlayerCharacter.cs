@@ -17,8 +17,9 @@ public class PlayerCharacter : Character
     PlayerController controller;
     Vector2 move;
     Rigidbody2D rb;
+    BuffHandler buffHandler;
     public Transform target;
-    Transform firePoint;
+    public Transform firePoint;
     Transform weaponSlot;
     PlayerState _state;
     public PlayerState state
@@ -34,7 +35,11 @@ public class PlayerCharacter : Character
         controller = GetComponent<PlayerController>();
         animator = GetComponent<Animator>();
         weaponSlot = transform.Find("WeaponSlot");
-        firePoint = weaponSlot.GetChild(0);
+        buffHandler = GetComponent<BuffHandler>();
+        BuffInfo buffInfo = new BuffInfo(Resources.Load<BuffData>("BuffData/Normal_Damage"),gameObject,gameObject);
+        buffHandler.AddBuff(buffInfo);
+        BuffInfo buffInfo1 = new BuffInfo(Resources.Load<BuffData>("BuffData/Skill01_BuffData"),gameObject,gameObject);
+        buffHandler.AddBuff(buffInfo1);
     }
 
     private void Update()
@@ -189,6 +194,15 @@ public class PlayerCharacter : Character
 
     void AttackAndFildUpdate()
     {
+        if (target && target.CompareTag("Enemy") && target.GetComponent<EnemyCharacter>().state == EnemyState.Die)
+        {
+            target = null;
+        }
+        if (target && target.CompareTag("Boss") && target.GetComponent<BossCharacter>().state == BossState.Die)
+        {
+            target = null;
+        }
+
         target = TargetScan();
         if (target)
         {
@@ -208,13 +222,13 @@ public class PlayerCharacter : Character
         Collider2D[] collides = Physics2D.OverlapCircleAll(transform.position, 4.0f, LayerMask.GetMask("CanHit"));
         foreach(Collider2D col in collides)
         {
-            if (col.CompareTag("Enemy"))
+            if (col.CompareTag("Enemy") && col.GetComponent<EnemyCharacter>().state == EnemyState.Die)
             {
-                //如果敌人死亡，跳过
+                continue;
             }
-            if (col.CompareTag("Boss"))
+            if (col.CompareTag("Boss") && col.GetComponent<BossCharacter>().state == BossState.Die)
             {
-                //如果Boss死亡，跳过
+                continue;
             }
             targetList.Add(col.transform);
         }

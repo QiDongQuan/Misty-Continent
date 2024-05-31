@@ -17,6 +17,9 @@ public class BuffData : ScriptableObject
     public bool isForever;//是否永久
     public float duration;//持续时间
     public float tickTime;//持续生效间隔时间
+    public bool isSkill;//是否是技能
+
+    public int skillExpend;//技能消耗
 
     //更新方式
     public BuffUpdateTimeEnum buffUpdateTime;

@@ -57,7 +57,11 @@ public class EnemyCharacter : Character
 
     private void Update()
     {
-        Fild(player);
+        if(state != EnemyState.Die)
+        {
+            Fild(player);
+        }
+        
         if (attackCD > 0)
         {
             attackCD -= Time.deltaTime;
@@ -114,5 +118,27 @@ public class EnemyCharacter : Character
         {
             transform.localScale = scaleLeft;
         }
+    }
+
+    public override void GetHit(int damage)
+    {
+        if (state == EnemyState.Die)
+        {
+            return;
+        }
+
+        Hp -= damage;
+        if (Hp <= 0)
+        {
+            Hp = 0;
+            Die();
+        }
+    }
+
+    void Die()
+    {
+        animator.SetTrigger("Die");
+        state = EnemyState.Die;
+        transform.GetComponent<Collider2D>().enabled = false;
     }
 }

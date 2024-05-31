@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8998534649382497145}
   - component: {fileID: 8998534649382497144}
   - component: {fileID: 8998534649382497147}
+  - component: {fileID: 171252636}
   m_Layer: 6
   m_Name: Enemy001
   m_TagString: Boss
@@ -170,9 +171,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   runSpeed: 2
-  Hp: 0
+  Hp: 20
   Enenrgy: 0
-  Attack: 0
+  Attack: 5
   Armor: 0
   MaxHp: 0
   MaxEnenrgy: 0
@@ -182,6 +183,18 @@ MonoBehaviour:
   skillBullet: {fileID: 6215211541363614745, guid: 382e10f54c40ce44b87975a292a48924, type: 3}
   fireball: {fileID: 5308852748761960528, guid: 4bbedddc1dd574d48b2a2befeec9954a, type: 3}
   _state: 0
+--- !u!114 &171252636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8998534649382497146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e84bd90ba5b2e14bbf2f78599d766e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8998534649925305396
 GameObject:
   m_ObjectHideFlags: 0
