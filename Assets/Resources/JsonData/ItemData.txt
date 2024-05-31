@@ -8,7 +8,7 @@
 		"Hp":"0-0-0",
 		"PrefabPath":"ItemPrefabs/Dragonblade",
 		"BuffId":"1101",
-		"ImagePath":"ItemImage/Dragonblade"
+		"ImagePath":"ItemImage/1001"
 	},
 	"1002":{
 		"ID":"1002",
@@ -19,7 +19,7 @@
 		"Hp":"0-0-0",
 		"PrefabPath":"ItemPrefabs/Axe02",
 		"BuffId":"1102",
-		"ImagePath":"ItemImage/Axe02"
+		"ImagePath":"ItemImage/1002"
 	},
 	"1003":{
 		"ID":"1003",
@@ -30,6 +30,6 @@
 		"Hp":"0-0-0",
 		"PrefabPath":"ItemPrefabs/GreatSword01",
 		"BuffId":"1103",
-		"ImagePath":"ItemImage/GreatSword01"
+		"ImagePath":"ItemImage/1003"
 	}
 }

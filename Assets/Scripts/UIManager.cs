@@ -92,7 +92,7 @@ public class UIManager : MonoBehaviour
         infoPanel.transform.GetChild(0).GetComponent<Text>().text = item.jsonData.Name;
         infoPanel.transform.GetChild(1).GetComponent<Text>().text = "品质:" + item.quality;
         infoPanel.transform.GetChild(2).GetComponent<Text>().text = "攻击力:" + item.jsonData.Attack[item.quality - 1];
-        infoPanel.transform.GetChild(3).GetComponent<Text>().text = "防御力:" + item.jsonData.Defensive[item.quality - 1];
+        infoPanel.transform.GetChild(3).GetComponent<Text>().text = "护甲:" + item.jsonData.Defensive[item.quality - 1];
         infoPanel.transform.GetChild(4).GetComponent<Text>().text = "生命值:" + item.jsonData.Hp[item.quality - 1];
         infoPanel.transform.GetChild(4).GetComponent<Text>().text = "技能:";
     }

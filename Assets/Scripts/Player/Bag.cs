@@ -10,6 +10,15 @@ public class Bag : MonoBehaviour
     public List<ItemData> playerItems = new List<ItemData>();//玩家装备槽
     public const int n = 20;//玩家背包容量
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            Debug.Log("添加道具");
+            AddRandomItem();
+        }
+    }
+
     public int FindFirstEmpty()
     {
         for (int i = 0; i < items.Count; i++)

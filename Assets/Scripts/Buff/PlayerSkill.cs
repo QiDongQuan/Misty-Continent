@@ -17,7 +17,7 @@ public class PlayerSkill : BaseBuffModule
         if (playerCharacter.target != null)
         {
             GameObject tmp = Instantiate(skillPrefab);
+            playerCharacter.Enenrgy -= buffInfo.buffData.skillExpend;
         }
-        playerCharacter.Enenrgy -= buffInfo.buffData.skillExpend;
     }
 }
