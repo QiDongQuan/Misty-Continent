@@ -1,0 +1,35 @@
+{
+	"1001":{
+		"ID":"1001",
+		"Name":"步枪",
+		"Type":"1",
+		"Attack":"50-60-70",
+		"Defensive":"0-0-0",
+		"Hp":"0-0-0",
+		"PrefabPath":"ItemPrefabs/Dragonblade",
+		"BuffId":"1101",
+		"ImagePath":"ItemImage/Dragonblade"
+	},
+	"1002":{
+		"ID":"1002",
+		"Name":"普通帽子",
+		"Type":"2",
+		"Attack":"50-60-70",
+		"Defensive":"0-0-0",
+		"Hp":"0-0-0",
+		"PrefabPath":"ItemPrefabs/Axe02",
+		"BuffId":"1102",
+		"ImagePath":"ItemImage/Axe02"
+	},
+	"1003":{
+		"ID":"1003",
+		"Name":"衣服",
+		"Type":"3",
+		"Attack":"50-60-70",
+		"Defensive":"0-0-0",
+		"Hp":"0-0-0",
+		"PrefabPath":"ItemPrefabs/GreatSword01",
+		"BuffId":"1103",
+		"ImagePath":"ItemImage/GreatSword01"
+	}
+}
