@@ -78,7 +78,7 @@ public class EnemyCharacter : Character
                 if (Vector3.Distance(transform.position, player.position) < attackDist && attackCD <= 0)
                 {
                     state = EnemyState.Attack;
-                    Attack();
+                    AAttack();
                     attackCD = 2.0f;
                 }
                 break;
@@ -91,7 +91,7 @@ public class EnemyCharacter : Character
         }
     }
 
-    void Attack()
+    void AAttack()
     {
         int random = Random.Range(0, 10);
         if (random < 7)

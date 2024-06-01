@@ -83,7 +83,7 @@ public class BossCharacter : Character
                 if (Vector3.Distance(transform.position, player.position) < attackDist && attackCD <= 0)
                 {
                     state = BossState.Attack;
-                    Attack();
+                    AAttack();
                     attackCD = 2.0f;
                 }
                 break;
@@ -91,7 +91,7 @@ public class BossCharacter : Character
                 if (Vector3.Distance(transform.position, player.position) < attackDist && attackCD <= 0)
                 {
                     state = BossState.Attack;
-                    Attack();
+                    AAttack();
                     attackCD = 2.0f;
                 }
                 break;
@@ -107,7 +107,7 @@ public class BossCharacter : Character
         HpUI.value = Hp;
     }
 
-    void Attack()
+    void AAttack()
     {
         int random = Random.Range(0, 10);
         if(random < 7)
