@@ -27,6 +27,7 @@ public class UIManager : MonoBehaviour
 
     public Text Tips;
     public Image ExperienceBar;
+    public Text ExperienceShow;
     public Text Lv;
 
     private void Start()
@@ -47,6 +48,7 @@ public class UIManager : MonoBehaviour
             player.lv += 1;
             Lv.text = player.lv.ToString();
         }
+        ExperienceShow.text = (ExperienceBar.fillAmount*100).ToString()+"%";
     }
 
     public void SetTips(string text)
