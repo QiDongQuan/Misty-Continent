@@ -14,6 +14,9 @@ public class Character : MonoBehaviour
     public int MaxHp;
     public int MaxEnenrgy;
 
+    public int DropExperience;//怪物被击杀时玩家获得的经验
+    public int DropEnergy;//怪物被击杀时玩家获得的能量
+
     public bool IsCanBeKill(DamageInfo damageInfo)
     {
         if(Hp <= damageInfo.damage)

@@ -6632,7 +6632,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 34.199997, y: 0}
+  m_AnchoredPosition: {x: 34.19998, y: 0}
   m_SizeDelta: {x: 15, y: 15}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &2123036599
@@ -6744,6 +6744,18 @@ PrefabInstance:
       propertyPath: Canvas
       value: 
       objectReference: {fileID: 1930845875}
+    - target: {fileID: 2646958855607671223, guid: 4157650d75871df43baa026bbe38d30b, type: 3}
+      propertyPath: DropEnery
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2646958855607671223, guid: 4157650d75871df43baa026bbe38d30b, type: 3}
+      propertyPath: DropEnergy
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2646958855607671223, guid: 4157650d75871df43baa026bbe38d30b, type: 3}
+      propertyPath: DropExperience
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4157650d75871df43baa026bbe38d30b, type: 3}
 --- !u!1001 &5854585751034016559
@@ -6810,9 +6822,25 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1765931715}
     - target: {fileID: 5854585750943471807, guid: cf08fc26faaa13745bd7061b22ccf018, type: 3}
+      propertyPath: MaxHp
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 5854585750943471807, guid: cf08fc26faaa13745bd7061b22ccf018, type: 3}
       propertyPath: Canvas
       value: 
       objectReference: {fileID: 1008881862}
+    - target: {fileID: 5854585750943471807, guid: cf08fc26faaa13745bd7061b22ccf018, type: 3}
+      propertyPath: DropEnery
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5854585750943471807, guid: cf08fc26faaa13745bd7061b22ccf018, type: 3}
+      propertyPath: DropEnergy
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5854585750943471807, guid: cf08fc26faaa13745bd7061b22ccf018, type: 3}
+      propertyPath: DropExperience
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf08fc26faaa13745bd7061b22ccf018, type: 3}
 --- !u!1001 &7043119260362366684
@@ -6844,7 +6872,7 @@ PrefabInstance:
       objectReference: {fileID: 1571335336}
     - target: {fileID: 7043119259683948641, guid: 4d51630a708473f468c73ca075a6db11, type: 3}
       propertyPath: Enenrgy
-      value: 100000
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7043119259683948641, guid: 4d51630a708473f468c73ca075a6db11, type: 3}
       propertyPath: EnenrgyUI
@@ -6999,6 +7027,18 @@ PrefabInstance:
       propertyPath: Canvas
       value: 
       objectReference: {fileID: 1606756444}
+    - target: {fileID: 8998534649382497147, guid: d208b27f1aadd9249bec4707200d6bcd, type: 3}
+      propertyPath: DropEnery
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8998534649382497147, guid: d208b27f1aadd9249bec4707200d6bcd, type: 3}
+      propertyPath: DropEnergy
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8998534649382497147, guid: d208b27f1aadd9249bec4707200d6bcd, type: 3}
+      propertyPath: DropExperience
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 8998534649382497148, guid: d208b27f1aadd9249bec4707200d6bcd, type: 3}
       propertyPath: m_RootOrder
       value: 3

@@ -7,7 +7,12 @@ public class PlayerLevelUp : BaseBuffModule
 {
     public override void Applay(BuffInfo buffInfo, DamageInfo damageInfo = null)
     {
-        Debug.Log("经验增加");
-        buffInfo.target.GetComponent<PlayerCharacter>().experience += 20;
+        PlayerCharacter player = buffInfo.target?.GetComponent<PlayerCharacter>();
+        Character enemy = damageInfo.target?.GetComponent<Character>();
+        if (player)
+        {
+            Debug.Log($"{player.name}击杀{enemy.name}获得{enemy.DropExperience}经验");
+            player.experience += enemy.DropExperience;
+        }
     }
 }

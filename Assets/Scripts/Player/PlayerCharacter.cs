@@ -53,6 +53,7 @@ public class PlayerCharacter : Character
         AddBuff("BuffData/Normal_Damage", gameObject, gameObject);
         AddBuff("BuffData/Skill01_BuffData", gameObject, gameObject);
         AddBuff("BuffData/PlayerLevelUp_BuffData", gameObject, gameObject);
+        AddBuff("BuffData/GetEnergy_BuffData",gameObject,gameObject);
     }
 
     public void AddBuff(string buffData,GameObject craetor,GameObject target)
