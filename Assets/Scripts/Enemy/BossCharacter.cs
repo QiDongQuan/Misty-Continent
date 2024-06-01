@@ -12,6 +12,8 @@ public enum BossState
 
 public class BossCharacter : Character
 {
+    [HideInInspector]
+    public List<ItemData> dropList;
     public float attackDist = 8.0f;
     public float attackCD = 2.0f;
     Animator animator;
@@ -172,6 +174,32 @@ public class BossCharacter : Character
         state = BossState.Die;
         transform.GetComponent<Collider2D>().enabled = false;
         Canvas.enabled = false;
+        DeathDrop();
+        StartCoroutine(Delete());
+    }
+
+    IEnumerator Delete()
+    {
+        yield return new WaitForSeconds(5);
+        Destroy(gameObject);
+    }
+
+    void DeathDrop()
+    {
+        float angleDelta = 360.0f / dropList.Count; // 计算每个道具之间的角度差
+        float dropRadius = 1.0f; // 设置道具分散的半径大小
+        for (int i = 0; i < dropList.Count; i++)
+        {
+            // 计算当前道具的角度（转换为弧度）
+            float angleRad = (angleDelta * i) * Mathf.Deg2Rad;
+
+            // 计算当前道具的位置偏移
+            Vector3 offset = new Vector3(Mathf.Cos(angleRad) * dropRadius, Mathf.Sin(angleRad) * dropRadius, 0);
+
+            GameObject tmp = Instantiate(Resources.Load<GameObject>("ItemDrop"));
+            tmp.transform.position = transform.position + offset;
+            tmp.GetComponent<ItemDrop>().item = dropList[i];
+        }
     }
 
     void Fild(Transform target)
