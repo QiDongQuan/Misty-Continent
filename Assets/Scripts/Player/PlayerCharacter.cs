@@ -39,7 +39,6 @@ public class PlayerCharacter : Character
     public Slider EnenrgyUI;
     public Canvas Canvas;
 
-
     private void Start()
     {
         Hp = MaxHp;
@@ -53,7 +52,7 @@ public class PlayerCharacter : Character
         skillBuff = GetComponent<SkillBuff>();
         bag = GetComponent<Bag>();
         AddBuff("BuffData/Normal_Damage", gameObject, gameObject);
-        AddBuff("BuffData/Skill01_BuffData", gameObject, gameObject);
+        //AddBuff("BuffData/Skill01_BuffData", gameObject, gameObject);
         AddBuff("BuffData/PlayerLevelUp_BuffData", gameObject, gameObject);
         AddBuff("BuffData/GetEnergy_BuffData",gameObject,gameObject);
     }

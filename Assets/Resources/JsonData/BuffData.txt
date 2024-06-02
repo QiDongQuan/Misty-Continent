@@ -1,0 +1,14 @@
+{
+	"1001":{
+		"ID":"1001",
+		"Path":"BuffData/Normal_Damage"
+	},
+	"1002":{
+		"ID":"1002",
+		"Path":"BuffData/Skill01_BuffData"
+	},
+	"1003":{
+		"ID":"1003",
+		"Path":"BuffData/PlayerLevelUp_BuffData"
+	}
+}
