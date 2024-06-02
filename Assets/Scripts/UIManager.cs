@@ -29,6 +29,9 @@ public class UIManager : MonoBehaviour
     public Image ExperienceBar;
     public Text ExperienceShow;
     public Text Lv;
+    public Text PlayerAttack;
+    public Text PlayerArmor;
+    public Text PlayerHp;
 
     private void Start()
     {
@@ -37,6 +40,9 @@ public class UIManager : MonoBehaviour
     private void Update()
     {
         LvRefresh();
+        PlayerAttack.text = "攻击力：" + player.Attack.ToString();
+        PlayerArmor.text = "护甲：" + player.Armor.ToString();
+        PlayerHp.text = "生命值" + player.MaxHp.ToString();
     }
 
     public void LvRefresh()
@@ -113,7 +119,7 @@ public class UIManager : MonoBehaviour
         infoPanel.transform.GetChild(2).GetComponent<Text>().text = "攻击力:" + item.jsonData.Attack[item.quality - 1];
         infoPanel.transform.GetChild(3).GetComponent<Text>().text = "护甲:" + item.jsonData.Defensive[item.quality - 1];
         infoPanel.transform.GetChild(4).GetComponent<Text>().text = "生命值:" + item.jsonData.Hp[item.quality - 1];
-        infoPanel.transform.GetChild(4).GetComponent<Text>().text = "技能:";
+        //infoPanel.transform.GetChild(4).GetComponent<Text>().text = "技能:";
     }
 
     public void HideInfoPanel()

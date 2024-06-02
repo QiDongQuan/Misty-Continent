@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Boss
   - Enemy
+  - EnemyBorn
+  - BossBorn
   layers:
   - Default
   - TransparentFX

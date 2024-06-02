@@ -71,7 +71,7 @@ public class BossCharacter : Character
     private void Update()
     {
         RefreshUI();
-        if (state != BossState.Die)
+        if (Hp>0)
         {
             Fild(player);
         }
@@ -82,19 +82,19 @@ public class BossCharacter : Character
         switch (state)
         {
             case BossState.Move:
-                if (Vector3.Distance(transform.position, player.position) < attackDist && attackCD <= 0)
+                if (attackCD <= 0)
                 {
                     state = BossState.Attack;
                     AAttack();
-                    attackCD = 2.0f;
+                    attackCD = 0.5f;
                 }
                 break;
             case BossState.Attack:
-                if (Vector3.Distance(transform.position, player.position) < attackDist && attackCD <= 0)
+                if (attackCD <= 0)
                 {
                     state = BossState.Attack;
                     AAttack();
-                    attackCD = 2.0f;
+                    attackCD = 0.5f;
                 }
                 break;
             case BossState.Die:
@@ -112,7 +112,7 @@ public class BossCharacter : Character
     void AAttack()
     {
         int random = Random.Range(0, 10);
-        if(random < 7)
+        if (random < 4)
         {
             animator.SetTrigger("Attack");
         }

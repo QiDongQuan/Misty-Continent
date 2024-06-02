@@ -6,9 +6,15 @@ public class Bag : MonoBehaviour
 {
     [HideInInspector]
     public List<ItemData> items = new List<ItemData>();//玩家背包数据
-    [HideInInspector]
+    //[HideInInspector]
     public List<ItemData> playerItems = new List<ItemData>();//玩家装备槽
     public const int n = 20;//玩家背包容量
+    PlayerCharacter player;
+
+    private void Start()
+    {
+        player = GetComponent<PlayerCharacter>();
+    }
 
     private void Update()
     {

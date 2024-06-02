@@ -23,6 +23,7 @@ public class PlayerCharacter : Character
     Vector2 move;
     Rigidbody2D rb;
     BuffHandler buffHandler;
+    Bag bag;
     public Transform target;
     public Transform firePoint;
     Transform weaponSlot;
@@ -50,6 +51,7 @@ public class PlayerCharacter : Character
         weaponSlot = transform.Find("WeaponSlot");
         buffHandler = GetComponent<BuffHandler>();
         skillBuff = GetComponent<SkillBuff>();
+        bag = GetComponent<Bag>();
         AddBuff("BuffData/Normal_Damage", gameObject, gameObject);
         AddBuff("BuffData/Skill01_BuffData", gameObject, gameObject);
         AddBuff("BuffData/PlayerLevelUp_BuffData", gameObject, gameObject);
@@ -71,6 +73,7 @@ public class PlayerCharacter : Character
     {
         move = new Vector2 (controller.h, controller.v);
         RefreshUI();
+        RefreshAttribute();
     }
 
     private void FixedUpdate()
@@ -300,6 +303,23 @@ public class PlayerCharacter : Character
         HpUI.value = Hp;
         EnenrgyUI.maxValue = MaxEnenrgy;
         EnenrgyUI.value = Enenrgy;
+    }
+
+    public void RefreshAttribute()
+    {
+        Attack = lv * 5;
+        MaxHp = 40+lv*10;
+        Armor = lv * 5;
+        for (int i = 0; i < bag.playerItems.Count; i++)
+        {
+            if (bag.playerItems[i] != null)
+            {
+                Attack += bag.playerItems[i].jsonData.Attack[bag.playerItems[i].quality - 1];
+                MaxHp += bag.playerItems[i].jsonData.Hp[bag.playerItems[i].quality - 1];
+                Armor += bag.playerItems[i].jsonData.Defensive[bag.playerItems[i].quality - 1];
+            }
+        }
+        
     }
 
     void Fild(float h)

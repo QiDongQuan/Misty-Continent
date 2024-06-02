@@ -12,7 +12,7 @@ public enum EnemyState
 
 public class EnemyCharacter : Character
 {
-    [HideInInspector]
+    //[HideInInspector]
     public List<ItemData> dropList;
     public float attackDist = 1.0f;
     public float attackCD = 2.0f;
