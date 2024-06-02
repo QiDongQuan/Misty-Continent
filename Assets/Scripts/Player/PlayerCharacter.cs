@@ -14,7 +14,7 @@ public enum PlayerState
 
 public class PlayerCharacter : Character
 {
-    [HideInInspector]
+    //[HideInInspector]
     public int lv = 1;
     //[HideInInspector]
     public int experience;
@@ -60,6 +60,13 @@ public class PlayerCharacter : Character
     public void AddBuff(string buffData,GameObject craetor,GameObject target)
     {
         BuffInfo buffInfo = new BuffInfo(Resources.Load<BuffData>(buffData), gameObject, gameObject);
+        foreach (var buff in buffHandler.buffList)
+        {
+            if(buffInfo.buffData.isSkill && buffInfo.buffData.id == buff.buffData.id)
+            {
+                return;
+            }
+        }
         buffHandler.AddBuff(buffInfo);
         if (buffInfo.buffData.isSkill)
         {

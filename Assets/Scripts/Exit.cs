@@ -7,6 +7,7 @@ public class Exit : MonoBehaviour
 {
     public void ExitGame()
     {
+        GameMode.Instance.SaveGame();
         PlayerPrefs.SetString("LoadSceneName", "Start");
         SceneManager.LoadScene("Loading");
     } 

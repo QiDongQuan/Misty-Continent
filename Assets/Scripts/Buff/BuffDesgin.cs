@@ -15,6 +15,7 @@ public enum BuffRemoveStackUpdataEnum
     Reduce//时间结束减少层数
 }
 
+[System.Serializable]
 public class BuffInfo
 {
     public BuffData buffData;

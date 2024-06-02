@@ -36,7 +36,7 @@ public class BuffJsonManager
     private void LodingItemData()
     {
         items = new Dictionary<int, BuffJsonData>();
-        string str = Resources.Load<TextAsset>("JsonData/EnemyData").text;
+        string str = Resources.Load<TextAsset>("JsonData/BuffData").text;
         JsonData data = JsonMapper.ToObject(str);
         for (int i = 0; i < data.Count; i++)
         {

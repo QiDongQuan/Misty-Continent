@@ -1,12 +1,15 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEditor.Progress;
+using Random = UnityEngine.Random;
 
 public class Bag : MonoBehaviour
 {
     [HideInInspector]
     public List<ItemData> items = new List<ItemData>();//玩家背包数据
-    //[HideInInspector]
+    [HideInInspector]
     public List<ItemData> playerItems = new List<ItemData>();//玩家装备槽
     public const int n = 20;//玩家背包容量
     PlayerCharacter player;
@@ -42,6 +45,26 @@ public class Bag : MonoBehaviour
         }
         items.Add(null);
         return items.Count - 1;
+    }
+
+    public void Refresh()
+    {
+        for(int i = 0;i < items.Count;i++)
+        {
+            if (items[i].autoID == 0)
+            {
+                continue;
+            }
+            UIManager.Instance.SetItem(i, items[i]);
+        }
+        for(int i = 0;i<playerItems.Count;i++)
+        {
+            if (playerItems[i].autoID == 0)
+            {
+                continue;
+            }
+            UIManager.Instance.SetItem(i, playerItems[i], UIManager.Instance.playerGrid);
+        }
     }
 
     //随机添加道具

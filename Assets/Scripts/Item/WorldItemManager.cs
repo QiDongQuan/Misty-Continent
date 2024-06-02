@@ -1,12 +1,14 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class WorldItemManager : MonoBehaviour
 {
     public Dictionary<int, ItemData> allItems = new Dictionary<int, ItemData>();
     public static WorldItemManager Instance;
-    [HideInInspector]
+    //[HideInInspector]
     public int count = 1;
 
     private void Awake()

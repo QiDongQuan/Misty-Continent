@@ -33,6 +33,7 @@ public class EnterMap : MonoBehaviour
 
     public void ButtonClicked(string key)
     {
+        GameMode.Instance.SaveGame();
         PlayerPrefs.SetInt("MapId", int.Parse(key));
         PlayerPrefs.SetString("LoadSceneName","Game01");
         SceneManager.LoadScene("Loading");
