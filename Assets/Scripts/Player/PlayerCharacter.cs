@@ -59,10 +59,13 @@ public class PlayerCharacter : Character
 
     public void AddBuff(string buffData,GameObject craetor,GameObject target)
     {
+
+            Debug.Log($"buffhandler 组件是否存在: {GetComponent<BuffHandler>() != null}");
+
         BuffInfo buffInfo = new BuffInfo(Resources.Load<BuffData>(buffData), gameObject, gameObject);
         foreach (var buff in buffHandler.buffList)
         {
-            if(buffInfo.buffData.isSkill && buffInfo.buffData.id == buff.buffData.id)
+            if (buffInfo.buffData.isSkill && buffInfo.buffData.id == buff.buffData.id)
             {
                 return;
             }
@@ -318,7 +321,7 @@ public class PlayerCharacter : Character
         Armor = lv * 5;
         for (int i = 0; i < bag.playerItems.Count; i++)
         {
-            if (bag.playerItems[i] != null)
+            if (bag.playerItems[i] != null && bag.playerItems[i].jsonID != 0)
             {
                 Attack += bag.playerItems[i].jsonData.Attack[bag.playerItems[i].quality - 1];
                 MaxHp += bag.playerItems[i].jsonData.Hp[bag.playerItems[i].quality - 1];

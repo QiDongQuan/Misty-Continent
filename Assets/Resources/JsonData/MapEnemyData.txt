@@ -36,16 +36,16 @@
               "Attack": "10",
               "Armor": "5",
               "Hp": "100",
-              "Count": "5",
-              "DropID":"1003"
+              "Count": "10",
+              "DropID":"1001"
             },
             {
               "ID": "1003",
               "Attack": "20",
               "Armor": "10",
               "Hp": "150",
-              "Count": "3",
-              "DropID":"1003"
+              "Count": "10",
+              "DropID":"1002"
             }
           ],
 		"Boss":[

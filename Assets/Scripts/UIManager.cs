@@ -1,9 +1,8 @@
 using System.Collections;
-using System.Collections.Generic;
+using DG.Tweening;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
-using static UnityEditor.Progress;
 
 public class UIManager : MonoBehaviour
 {
@@ -32,6 +31,7 @@ public class UIManager : MonoBehaviour
     public Text PlayerAttack;
     public Text PlayerArmor;
     public Text PlayerHp;
+    public Text Successful;
 
     private void Start()
     {
@@ -43,6 +43,22 @@ public class UIManager : MonoBehaviour
         PlayerAttack.text = "攻击力：" + player.Attack.ToString();
         PlayerArmor.text = "护甲：" + player.Armor.ToString();
         PlayerHp.text = "生命值" + player.MaxHp.ToString();
+    }
+
+    public void ShowRecived()
+    {
+        Successful.rectTransform.localScale = Vector3.zero;
+        Successful.gameObject.SetActive(true);
+        Color c = Successful.color;
+        Successful.color = new Color(c.r, c.g, c.b);
+
+        Sequence seq = DOTween.Sequence();//动画序列
+        seq.Append(Successful.rectTransform.DOScale(1,1f));
+        seq.AppendInterval(1f);//等待0.8秒
+        seq.AppendCallback(() =>//序列结束时执行的回调函数
+        {
+            Successful.gameObject.SetActive(false);
+        });
     }
 
     public void LvRefresh()

@@ -577,7 +577,7 @@ MonoBehaviour:
   MaxHp: 200
   MaxEnenrgy: 0
   DropExperience: 30
-  DropEnergy: 5
+  DropEnergy: 1
   dropList: []
   attackDist: 8
   attackCD: 2

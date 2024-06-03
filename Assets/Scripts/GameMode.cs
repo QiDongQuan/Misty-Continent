@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
@@ -138,7 +139,24 @@ public class GameMode : MonoBehaviour
         player.GetComponent<Bag>().playerItems = new List<ItemData>(saveData.playerItems);
         foreach (var buffpath in saveData.buffList)
         {
-            player.GetComponent<PlayerCharacter>().AddBuff(buffpath,player,player);
+            Debug.Log(buffpath);
+            if (!player)
+            {
+                player = GameObject.FindGameObjectWithTag("Player");
+            }
+            if (player != null)
+            {
+                Debug.Log($"PlayerCharacter 组件是否存在: {player.GetComponent<PlayerCharacter>() != null}");
+            }
+            try
+            {
+                player.GetComponent<PlayerCharacter>().AddBuff(buffpath, player, player);
+            }
+            catch (NullReferenceException ex)
+            {
+                Debug.Log("发生了 NullReferenceException: " + ex.Message);
+            }
+            
         }
         player.GetComponent<Bag>().Refresh();
         WorldItemManager.Instance.allItems.Clear();

@@ -169,6 +169,7 @@ public class BossCharacter : Character
 
     void Die()
     {
+        UIManager.Instance.ShowRecived();
         animator.SetTrigger("Die");
         animator.ResetTrigger("GetHit");
         state = BossState.Die;
