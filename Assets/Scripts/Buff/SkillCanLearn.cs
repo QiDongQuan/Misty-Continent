@@ -40,7 +40,7 @@ public class SkillCanLearn : MonoBehaviour
             {
                 if(info.buffData.id == buffData.id)
                 {
-                    buttonText.text = buffData.buffName + "(以学习)";
+                    buttonText.text = buffData.buffName + "(已学习)";
                     button.onClick.RemoveAllListeners();
                 }
             } 
